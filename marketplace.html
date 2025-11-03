@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maple Marketplace · Maple Mental Movement</title>
+    <link rel="icon" type="image/png" href="./Logo-icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="marketplace-page" data-page="marketplace">
+    <header class="site-header has-nav">
+      <div class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <div class="logo-text">
+          <p class="brand-name">Maple Mental Movement</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="marketplace.html" data-page="marketplace">Maple Marketplace</a>
+        <a href="mint.html" data-page="mint">Mint Maple</a>
+        <a href="my-maples.html" data-page="collection">My Maples</a>
+        <a href="more.html" data-page="more">More</a>
+      </nav>
+      <button class="connect-wallet" type="button">Connect Wallet</button>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <h1>Maple Gold Leaf Marketplace.</h1>
+        <div class="inline-buttons">
+          <button class="primary-btn" type="button" data-role="open-listing">List a Maple</button>
+          <a class="secondary-btn" href="mint.html">Mint my story first</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="marketplace-filter-form">
+          <div class="marketplace-search">
+            <span class="marketplace-search-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5" />
+                <line x1="12.5303" y1="12.4697" x2="16.0303" y2="15.9697" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+            </span>
+            <input
+              type="search"
+              placeholder="Search Maples"
+              data-role="market-search"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="market-grid simple-grid" data-role="market-grid"></div>
+        <p class="marketplace-empty-state" data-role="market-empty" hidden>
+          Nothing matches that search yet. Try a different keyword or browse all listings.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="current-year"></span> Maple Mental Movement. Enabling people to share their stories with the world.
+      </p>
+      <div class="footer-links">
+        <a href="marketplace.html">Maple Marketplace</a>
+        <a href="mint.html">Mint Maple</a>
+        <a href="my-maples.html">My Maples</a>
+        <a href="more.html">More</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

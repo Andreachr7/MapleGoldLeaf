@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Maples · Maple Mental Movement</title>
+    <link rel="icon" type="image/png" href="./Logo-icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="collection-page" data-page="collection">
+    <header class="site-header has-nav">
+      <div class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <div class="logo-text">
+          <p class="brand-name">Maple Mental Movement</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="marketplace.html" data-page="marketplace">Maple Marketplace</a>
+        <a href="mint.html" data-page="mint">Mint Maple</a>
+        <a href="my-maples.html" data-page="collection">My Maples</a>
+        <a href="more.html" data-page="more">More</a>
+      </nav>
+      <button class="connect-wallet" type="button">Connect Wallet</button>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <h1>Keep track of your Maple Gold Leafs.</h1>
+
+        <div class="inline-buttons">
+          <a class="primary-btn" href="mint.html">Mint Experience</a>
+          <a class="secondary-btn" href="marketplace.html">List a Maple</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="market-grid simple-grid" data-role="collection-grid"></div>
+        <p class="marketplace-empty-state" data-role="collection-empty" hidden>
+          Your Maples will appear here as soon as your wallet is connected in the full app experience.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="current-year"></span> Maple Mental Movement. Enabling people to share their stories with the world.
+      </p>
+      <div class="footer-links">
+        <a href="marketplace.html">Maple Marketplace</a>
+        <a href="mint.html">Mint Maple</a>
+        <a href="my-maples.html">My Maples</a>
+        <a href="more.html">More</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

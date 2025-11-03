@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mint Maple · Maple Mental Movement</title>
+    <link rel="icon" type="image/png" href="./Logo-icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="mint-page" data-page="mint">
+    <header class="site-header has-nav">
+      <div class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <div class="logo-text">
+          <p class="brand-name">Maple Mental Movement</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="marketplace.html" data-page="marketplace">Maple Marketplace</a>
+        <a href="mint.html" data-page="mint">Mint Maple</a>
+        <a href="my-maples.html" data-page="collection">My Maples</a>
+        <a href="more.html" data-page="more">More</a>
+      </nav>
+      <button class="connect-wallet" type="button">Connect Wallet</button>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <h1>Add your Experience to your Maple Gold Leaf.</h1>
+      </section>
+
+      <section hidden>
+        <div class="market-grid simple-grid" data-role="mint-grid"></div>
+      </section>
+
+      <section class="mint-form-section">
+        <div class="mint-selector-wrapper">
+          <label class="mint-selector">
+            Maple selected
+            <select data-role="mint-select">
+              <option value="">Choose a Maple to mint</option>
+            </select>
+          </label>
+        </div>
+        <article class="nft-card mint-write-card">
+          <div class="nft-thumb thumb-1" aria-hidden="true"></div>
+          <div class="nft-info">
+            <h3>Mint my Experience</h3>
+            <p class="info-note">Select a Maple and add your experience below.</p>
+            <div class="story-history-mini" data-role="mint-history"></div>
+            <form class="mint-form" data-role="mint-form">
+              <label>
+                
+                <textarea
+                  placeholder="Add your experience to your Maple Gold Leaf..."
+                  maxlength="2200"
+                  data-role="mint-story"
+                ></textarea>
+              </label>
+              <p class="form-helper" data-role="mint-count">0 / 200 words</p>
+              <div class="inline-buttons">
+                <button class="ghost-btn" type="button" data-role="preview-story">Preview Experience</button>
+                <button class="primary-btn" type="submit">Confirm &amp; mint</button>
+              </div>
+              <p class="info-note">
+                Once you confirm, your experience is permanently engraved onto the blockchain.
+              </p>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="current-year"></span> Maple Mental Movement. Enabling people to share their experiences with the world.
+      </p>
+      <div class="footer-links">
+        <a href="marketplace.html">Maple Marketplace</a>
+        <a href="mint.html">Mint Maple</a>
+        <a href="my-maples.html">My Maples</a>
+        <a href="more.html">More</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
